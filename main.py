@@ -49,7 +49,7 @@ reset='\033[0m'
 grey = "\x1b[90m"
 
 def clear():
-  os.system('clear')
+  os.system('cls') # change this to clear if you are using linux, mac, or repl.it
 
 color_list=[red,green,yellow,magenta,cyan,bright_blue,bright_cyan,bright_green,bright_magenta,bright_red,bright_yellow]
 
