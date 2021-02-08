@@ -57,11 +57,11 @@ color_list=[red,green,yellow,magenta,cyan,bright_blue,bright_cyan,bright_green,b
 clear()
 
 for x in range(7):
-			for i in range(9):
-				f_color = random.choice(color_list)
-				clear()
-				for line in range(len(open("frames/frame" + str(i + 1) ).readlines())):
-					print(f_color+open("frames/frame" + str(i + 1) ).readlines()[line],end="")
-				time.sleep(0.1)
-			time.sleep(0.5)
-			clear()
+	for i in range(9):
+		f_color = random.choice(color_list)
+		clear()
+		for line in range(len(open("frames/frame" + str(i + 1) ).readlines())):
+			print(f_color+open("frames/frame" + str(i + 1) ).readlines()[line],end="")
+		time.sleep(0.1)
+	time.sleep(0.5)
+	clear()
