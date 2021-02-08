@@ -60,8 +60,8 @@ for x in range(7):
 	for i in range(9):
 		f_color = random.choice(color_list)
 		clear()
-		for line in range(len(open("frames/frame" + str(i + 1) ).readlines())):
-			print(f_color+open("frames/frame" + str(i + 1) ).readlines()[line],end="")
+		for line in range(len(open("frames/frame" + str(i + 1) + "txt").readlines())):
+			print(f_color+open("frames/frame" + str(i + 1) + "txt").readlines()[line],end="")
 		time.sleep(0.1)
 	time.sleep(0.5)
 	clear()
